@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>POST 8 TITLE - .Json</title>
+
+
+    <style>
+
+        /* =========================================
+           COLORS
+           ========================================= */
+
+        :root {
+            --background: #ffffff;
+
+            --bar-color: #a545a5;
+            --bar-text: #ffffff;
+
+            --post-title: #ef5a5a;
+            --text-color: #111111;
+
+            --max-width: 900px;
+        }
+
+
+        /* =========================================
+           RESET
+           ========================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            min-height: 100%;
+
+            background: var(--background);
+            color: var(--text-color);
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           TOP BAR
+           ========================================= */
+
+        .topbar {
+            width: 100%;
+            min-height: 75px;
+
+            background: var(--bar-color);
+
+            display: flex;
+            align-items: center;
+        }
+
+
+        .nav {
+            width: 92%;
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            color: var(--bar-text);
+
+            text-decoration: none;
+
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        .links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 35px;
+        }
+
+
+        .links a {
+            color: var(--bar-text);
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            padding: 8px 0;
+
+            border-bottom:
+                2px solid transparent;
+        }
+
+
+        .links a:hover {
+            opacity: 0.8;
+
+            border-bottom-color:
+                var(--bar-text);
+        }
+
+
+        /* =========================================
+           POST
+           ========================================= */
+
+        .post {
+            width: 92%;
+            max-width: var(--max-width);
+
+            margin: 0 auto;
+
+            padding:
+                70px 0 120px;
+        }
+
+
+        .post h1 {
+            margin:
+                0 0 15px;
+
+            color:
+                var(--post-title);
+
+            font-size: 38px;
+
+            line-height: 1.25;
+        }
+
+
+        .date {
+            margin-bottom: 40px;
+
+            font-weight: bold;
+        }
+
+
+        .hero-image {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            margin-bottom: 45px;
+
+            background: #dddddd;
+        }
+
+
+        .post-content {
+            font-size: 16px;
+
+            line-height: 1.8;
+        }
+
+
+        .post-content p {
+            margin:
+                0 0 25px;
+        }
+
+
+        /* =========================================
+           BACK
+           ========================================= */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 40px;
+
+            color: var(--post-title);
+
+            text-decoration: underline;
+
+            font-size: 14px;
+        }
+
+
+        .back:hover {
+            opacity: 0.7;
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 750px) {
+
+            .topbar {
+                padding:
+                    20px 0;
+            }
+
+
+            .nav {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            .links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 20px;
+            }
+
+
+            .post h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         TOP BAR
+         ===================================== -->
+
+    <header class="topbar">
+
+        <div class="nav">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                .Json
+            </a>
+
+
+            <div class="links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="games.html">
+                    Games
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a
+                    href="https://charlieclip.itch.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    itch.io
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         POST 8
+         ===================================== -->
+
+    <main class="post">
+
+        <h1>
+            POST 8 TITLE
+        </h1>
+
+
+        <p class="date">
+            9/7/26
+        </p>
+
+
+        <img
+            src="images/post8.png"
+            alt="Post 8"
+            class="hero-image"
+        >
+
+
+        <div class="post-content">
+
+            <p>
+                POST 8 TEXT GOES HERE.
+            </p>
+
+
+            <p>
+                You can add as many paragraphs as you want.
+            </p>
+
+
+            <p>
+                Just copy one of these p sections whenever you want another paragraph.
+            </p>
+
+        </div>
+
+
+        <a
+            href="blog.html"
+            class="back"
+        >
+            ← Back to Blog
+        </a>
+
+    </main>
+
+
+</body>
+
+</html>
