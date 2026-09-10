@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>I Love Making Games. I'm Just Tired. - .Json</title>
+
+
+    <style>
+
+        /* =========================================
+           COLORS
+           ========================================= */
+
+        :root {
+            --background: #ffffff;
+
+            --bar-color: #a545a5;
+            --bar-text: #ffffff;
+
+            --post-title: #ef5a5a;
+            --text-color: #111111;
+
+            --max-width: 900px;
+        }
+
+
+        /* =========================================
+           RESET
+           ========================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            min-height: 100%;
+
+            background: var(--background);
+            color: var(--text-color);
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           TOP BAR
+           ========================================= */
+
+        .topbar {
+            width: 100%;
+            min-height: 75px;
+
+            background: var(--bar-color);
+
+            display: flex;
+            align-items: center;
+        }
+
+
+        .nav {
+            width: 92%;
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            color: var(--bar-text);
+
+            text-decoration: none;
+
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        .links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 35px;
+        }
+
+
+        .links a {
+            color: var(--bar-text);
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            padding: 8px 0;
+
+            border-bottom:
+                2px solid transparent;
+        }
+
+
+        .links a:hover {
+            opacity: 0.8;
+
+            border-bottom-color:
+                var(--bar-text);
+        }
+
+
+        /* =========================================
+           POST
+           ========================================= */
+
+        .post {
+            width: 92%;
+            max-width: var(--max-width);
+
+            margin: 0 auto;
+
+            padding:
+                70px 0 120px;
+        }
+
+
+        .post h1 {
+            margin:
+                0 0 15px;
+
+            color:
+                var(--post-title);
+
+            font-size: 38px;
+
+            line-height: 1.25;
+        }
+
+
+        .date {
+            margin-bottom: 40px;
+
+            font-weight: bold;
+        }
+
+
+        .hero-image {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            margin-bottom: 45px;
+
+            background: #dddddd;
+        }
+
+
+        .post-content {
+            font-size: 16px;
+
+            line-height: 1.8;
+        }
+
+
+        .post-content p {
+            margin:
+                0 0 25px;
+        }
+
+
+        .post-content a {
+            color: var(--post-title);
+
+            text-decoration: underline;
+        }
+
+
+        .post-content a:hover {
+            opacity: 0.7;
+        }
+
+
+        /* =========================================
+           VIDEO
+           ========================================= */
+
+        .post-video {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            margin:
+                35px 0;
+
+            background: black;
+        }
+
+
+        /* =========================================
+           BACK
+           ========================================= */
+
+        .back {
+            display: inline-block;
+
+            margin-top: 40px;
+
+            color: var(--post-title);
+
+            text-decoration: underline;
+
+            font-size: 14px;
+        }
+
+
+        .back:hover {
+            opacity: 0.7;
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 750px) {
+
+            .topbar {
+                padding:
+                    20px 0;
+            }
+
+
+            .nav {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            .links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 20px;
+            }
+
+
+            .post h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         TOP BAR
+         ===================================== -->
+
+    <header class="topbar">
+
+        <div class="nav">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                .Json
+            </a>
+
+
+            <div class="links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="games.html">
+                    Games
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a
+                    href="https://charlieclip.itch.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    itch.io
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         POST 9
+         ===================================== -->
+
+    <main class="post">
+
+        <h1>
+            I Love Making Games. I'm Just Tired.
+        </h1>
+
+
+        <p class="date">
+            9/10/26
+        </p>
+
+
+        <img
+            src="images/post9.png"
+            alt="Post 9"
+            class="hero-image"
+        >
+
+
+        <div class="post-content">
+
+            <p>
+ I've been working on Floodgate for a while now.
+            <p>
+And recently, I've been bored of it.
+            <p>
+The weird thing is that I still love making games. I haven't suddenly decided game development sucks. I haven't lost interest in programming or making worlds or watching some stupid idea in my head turn into an actual thing I can walk around in.
+            <p>
+I'm just tired.
+            <p>
+And I think there's a difference between being tired of making games and being tired while making a game.
+            <p>
+So that's what this post is about.
+            </p>
+                  <h1>
+          I Don't Want to Abandon Another Game
+        </h1>
+            </p>
+          I've been working on Floodgate for a while now.
+            </p>
+I don't hate Floodgate. I don't think it's a bad game. I don't regret starting it, and I'm definitely not sitting here thinking, "Wow, game development fucking sucks. I should never do this again."
+            </p>
+I'm just bored of working on the same thing.
+            </p>
+And that's a surprisingly difficult thing to admit when it's your own game.
+            </p>
+When you start a new project, everything is exciting. You make the player controller and suddenly you can WALK. Holy shit. Incredible. Technology has peaked.
+            </p>
+Then you make a door.
+            </p>
+Then you make a room.
+            </p>
+Then you make whatever.
+            </p>
+Then suddenly there's an actual game where there used to be an empty Unity scene.
+            </p>
+That part is awesome.
+            </p>
+But eventually the project isn't new anymore.
+            </p>
+You've already figured out what the game is. You've already established how things should look and feel. You've already solved a lot of the big interesting problems.
+            </p>
+Now you have to actually make the rest of it.
+            </p>
+And that's where I am with Floodgate.
+            </p>
+There are still things I'm excited to make, obviously. There are areas I want to see finished, entities I want to implement, scenes I want to make, and a whole ending that I really want to eventually be able to play instead of just imagining it.
+            </p>
+But there's also a lot of:
+            </p>
+"Okay. Time to make another room."
+            </p>
+And then another one.
+            </p>
+And another one.
+            </p>
+And another one.
+            </p>
+And my brain, being extremely helpful, responds to this by generating approximately seventeen completely unrelated game ideas.
+            </p>
+Suddenly making literally anything else sounds incredible.
+            </p>
+What if I made this?
+            </p>
+What if I recreated that?
+            </p>
+What if I made a tiny side project?
+            </p>
+What if I opened a new Unity project and—
+            </p>
+NO.
+            </p>
+I've done this before.
+            </p>
+I get really excited about something. I work on it constantly. I make a bunch of progress really quickly. Then the excitement wears off, development gets slower, and another idea appears.
+            </p>
+The new idea feels better because it doesn't have any baggage yet.
+            </p>
+There's no giant list of things I still need to finish.
+            </p>
+There's no annoying bug I've been avoiding.
+            </p>
+There's no area I've stared at for three days.
+            </p>
+It's just potential.
+            </p>
+So I switch projects.
+            </p>
+And if I keep doing that forever, I don't really learn how to finish games.
+            </p>
+I learn how to start them.
+            </p>
+Starting games is easy for me.
+            </p>
+Finishing them is the part I'm trying to get better at.
+            </p>
+That's one of the reasons I'm still working on Floodgate even when I'm bored of it.
+            </p>
+Floodgate is a learning project. A lot of the reason I started making it was because I wanted to get better at 3D development and learn more about Unity.
+            </p>
+But it's also supposed to be an actual finished game.
+            </p>
+I don't want it to become another folder on my computer that I open three years from now and go:
+            </p>
+"Oh yeah. That."
+            </p>
+I want to reach the ending.
+            </p>
+I want to export the final build.
+            </p>
+I want to put it somewhere and be able to say:
+            </p>
+I finished this.
+            </p>
+Not because I think every single project needs to be finished. Sometimes an idea doesn't work. Sometimes you learn what you wanted to learn from a project and there's genuinely no reason to keep going. Sometimes something just isn't worth the time anymore.
+            </p>
+That's fine.
+            </p>
+I don't want to turn "FINISH EVERYTHING" into some stupid rule where I'm trapped working on a game I haven't enjoyed for four years because twelve-year-old me created a Unity project and therefore I have sworn to complete it.
+            </p>
+But I also don't want "I'm bored" to automatically mean "I'm done."
+            </p>
+Because I'm going to get bored again.
+            </p>
+If I keep making bigger games, I'm probably going to hit this point in basically every one of them.
+            </p>
+There will always be a part where the exciting idea has turned into actual work.
+            </p>
+And I want to learn how to get through that part.
+            </p>
+At the same time, I've realized there's another extreme that isn't particularly useful either:
+            </p>
+Forcing myself to work on Floodgate every free second because DISCIPLINE.
+            </p>
+That's a really good way to turn something I love doing into something I absolutely hate.
+            </p>
+So I'm trying to find something in between.
+            </p>
+Keep making Floodgate.
+            </p>
+Make progress.
+            </p>
+Don't abandon it because another shiny idea appeared.
+            </p>
+But also let myself make music sometimes.
+            </p>
+Draw something.
+            </p>
+Mess around with a stupid side project.
+            </p>
+Do literally anything besides staring at the same hallway for six hours.
+            </p>
+I want to build the habit of finishing games.
+            </p>
+I don't want to build the habit of making myself miserable.
+            </p>
+Those are different things.
+            </p>
+                            <h1>
+I'm Already Tired Before I Open Unity
+        </h1>
+                      </p>
+          Here's another problem:
+                      </p>
+Floodgate isn't the only thing I do all day.
+                      </p>
+I'm in high school.
+                      </p>
+Which means most of my day is already decided for me before I even wake up.
+                      </p>
+Get up.
+                      </p>
+Get ready.
+                      </p>
+Go to school.
+                      </p>
+Classes.
+                      </p>
+Assignments.
+                      </p>
+Grades.
+                      </p>
+Deadlines.
+                      </p>
+More assignments.
+                      </p>
+More grades.
+                      </p>
+People.
+                      </p>
+So many stupid people.
+                      </p>
+Then there's whatever personal stuff happens to be going on at the same time, because unfortunately real life doesn't look at your school schedule and politely wait until you're less busy.
+                      </p>
+Some weeks are fine.
+                      </p>
+Other weeks feel like somebody opened my calendar and started throwing shit at it.
+                      </p>
+And eventually I get home.
+                      </p>
+This is supposed to be the part of the day where I can finally relax.
+                      </p>
+Except then I remember:
+                      </p>
+Oh yeah. Floodgate.
+                      </p>
+And that's a weird feeling.
+                      </p>
+Because nobody is actually making me work on Floodgate.
+                      </p>
+Nobody is grading it.
+                      </p>
+Nobody is going to pull me aside and say:
+                      </p>
+"Json, I'm concerned about your performance. Room 042 was due Friday."
+                      </p>
+I'm not going to fail a class because a system isn't implemented yet.
+                      </p>
+There's no teacher waiting for my next build.
+                      </p>
+Most of the deadlines surrounding Floodgate are deadlines that I made.
+                      </p>
+I could just not work on it.
+                      </p>
+But your brain doesn't necessarily give a shit who invented the deadline.
+                      </p>
+If something becomes a thing you feel like you have to do, it can start feeling like another obligation.
+                      </p>
+And after an entire day of obligations, that's difficult.
+                      </p>
+I think that's the part of game-development burnout that I didn't really understand before.
+                      </p>
+I always imagined burnout as something caused directly by doing too much of the thing you're burned out on.
+                      </p>
+You work on a game for twelve hours every day.
+                      </p>
+Eventually your brain melts.
+                      </p>
+Burnout.
+                      </p>
+Makes sense.
+                      </p>
+But sometimes the game isn't what exhausted me.
+                      </p>
+Sometimes I barely touched Unity that day.
+                      </p>
+I'm exhausted because I spent the entire day at school, thinking about grades, dealing with people, doing assignments, worrying about deadlines, dealing with whatever personal stuff is happening, and just generally having a brain that has been on since I woke up.
+                      </p>
+Then I come home and expect that same brain to immediately become creative.
+                      </p>
+Okay!
+                      </p>
+School's over!
+                      </p>
+Time to program!
+                      </p>
+Make a cool room!
+                      </p>
+Solve a bug!
+                      </p>
+Design something!
+                      </p>
+Write dialogue!
+                      </p>
+Make music!
+                      </p>
+BE CREATIVE NOW.
+                      </p>
+And sometimes my brain just responds:
+                      </p>
+fhgjosafherrnjnvuerwipijfsdaopa no
+                      </p>
+Because the version of me that opens Unity at the end of the day isn't a freshly-rested game developer who has been patiently waiting for eight hours to start working.
+                      </p>
+Floodgate gets whatever is left of me at the end of the day.
+                      </p>
+Sometimes that's a lot.
+                      </p>
+Sometimes I get home and suddenly I have energy again. I open Unity and work for hours without really noticing how much time has passed.
+                      </p>
+Those days are great.
+                      </p>
+Other times, Floodgate gets approximately three brain cells and one of them is thinking about sleeping.
+                      </p>
+And I don't think that's some massive personal failure.
+                      </p>
+There are only so many hours in a day.
+                      </p>
+More importantly, there's only so much energy in a day.
+                      </p>
+Having two free hours doesn't necessarily mean I have two hours worth of usable brain left.
+                      </p>
+That's been a difficult thing for me to learn because I look at the clock and think:
+                      </p>
+"It's only 6 PM. I have plenty of time."
+                      </p>
+Technically?
+                      </p>
+Yeah.
+                      </p>
+I could spend the next four hours working on Floodgate.
+                      </p>
+But "time available" and "energy available" aren't the same number.
+                      </p>
+And when I forget that, I start getting annoyed at myself.
+                      </p>
+Why didn't I make more today?
+                      </p>
+Why did that room take so long?
+                      </p>
+Why am I playing games instead of working?
+                      </p>
+Why am I thinking about another game?
+                      </p>
+Why can't I just do it?
+                      </p>
+Then something that's supposed to be fun becomes another thing I'm behind on.
+                      </p>
+That's when I know something is wrong.
+                      </p>
+Because I didn't start making games because I desperately needed another source of deadlines in my life.
+                      </p>
+I started making games because I love making games.
+                      </p>
+                                      <h1>
+          What Burnout Actually Feels Like
+        </h1>
+                                </p>
+Burnout isn't very dramatic.
+                      </p>
+At least mine isn't.
+                      </p>
+There's no giant explosion.
+                      </p>
+I don't fall dramatically to my knees while sad orchestral music plays.
+                      </p>
+Usually I just...
+                      </p>
+sit there.
+                      </p>
+That's basically it.
+                      </p>
+I open Unity.
+                      </p>
+I know what I need to do.
+                      </p>
+Sometimes I know exactly what I need to do.
+                      </p>
+It's not even necessarily difficult.
+                      </p>
+"Put this here."
+                      </p>
+"Make this room."
+                      </p>
+"Fix this light."
+                      </p>
+"Add this trigger."
+                      </p>
+I've done all of those things before.
+                      </p>
+I know how.
+                      </p>
+And my brain goes:
+                      </p>
+no.
+                      </p>
+So I stare at the screen.
+                      </p>
+Maybe I move something.
+                      </p>
+Maybe I make one wall.
+                      </p>
+Maybe I open a script, look at it for thirty seconds, close it, reopen it, and somehow expect the code to have become more interesting while I wasn't looking.
+                      </p>
+Sometimes I actually get going.
+                      </p>
+Other times I save the project and close Unity twenty minutes later.
+                      </p>
+And that's frustrating because I want to want to work on it.
+                      </p>
+That's probably the weirdest part.
+                      </p>
+I can sit there thinking:
+                      </p>
+"I want Floodgate to be finished."
+                      </p>
+But simultaneously:
+                      </p>
+"I absolutely do not want to work on Floodgate right now."
+                      </p>
+Those aren't contradictory somehow.
+                      </p>
+The finished thing sounds awesome.
+                      </p>
+The process required to get there sounds exhausting.
+                      </p>
+Sometimes it feels like I want to put my forehead on the table and just stay there.
+                      </p>
+Sometimes it feels like I could sleep for a week.
+                      </p>
+Not literally.
+                      </p>
+Just that specific kind of tired where even the things you normally enjoy sound like they require way too much effort.
+                      </p>
+But here's the REALLY annoying part:
+                      </p>
+I can still have ideas.
+                      </p>
+SO MANY IDEAS.
+                      </p>
+Apparently my brain can be completely exhausted by the thought of making one more Floodgate room and then, thirty seconds later, enthusiastically design half of an entirely different game.
+                      </p>
+Which seems extremely fair and reasonable.
+                      </p>
+I'll be sitting there barely willing to move a cube in Floodgate, and suddenly:
+                      </p>
+"What if I made—"
+                      </p>
+NO.
+                      </p>
+"What if this game had—"
+                      </p>
+STOP.
+                      </p>
+"Okay but this would only take like a weekend—"
+                      </p>
+ABSOLUTELY NOT.
+                      </p>
+And suddenly I'm excited again.
+                      </p>
+That's what makes project hopping so tempting.
+                      </p>
+It isn't necessarily that I've lost my creativity.
+                      </p>
+Sometimes I'm still overflowing with it.
+                      </p>
+I'm just tired of using that creativity on the same thing.
+                      </p>
+There's something incredibly refreshing about a blank Unity scene.
+                      </p>
+Nothing is wrong yet.
+                      </p>
+There are no old systems to maintain.
+                      </p>
+No giant project hierarchy.
+                      </p>
+No areas waiting to be finished.
+                      </p>
+No expectations.
+                      </p>
+You can just make something stupid and see what happens.
+                      </p>
+Meanwhile, the existing project is sitting there like:
+                      </p>
+hello
+remember me
+you have responsibilities
+                      </p>
+Fuck.
+                      </p>
+So I've realized there's an important difference between:
+                      </p>
+"I don't want to make games."
+                      </p>
+and:
+                      </p>
+"I don't want to make THIS PART of THIS game TODAY."
+                      </p>
+Those can feel almost identical when you're sitting in front of Unity.
+                      </p>
+But they're not.
+                      </p>
+One means I've lost interest in the hobby.
+                      </p>
+The other means I've spent too much time staring at the same fucking project.
+                      </p>
+And right now, I think I'm mostly dealing with the second one.
+                      </p>
+I'm tired.
+                      </p>
+I'm restless.
+                      </p>
+I'm bored of certain parts of Floodgate.
+                      </p>
+I want to make other things.
+                      </p>
+Sometimes I want to sleep instead of making anything.
+                      </p>
+That's burnout.
+                      </p>
+At least for me.
+                      </p>
+It doesn't mean every creative thought disappears.
+                      </p>
+Sometimes it just means my patience for the current thing has hit zero.
+                      </p>
+                                      <h1>
+          I Still Love This
+        </h1>
+                                </p>
+         After everything I just wrote, I should probably make one thing extremely clear:
+                      </p>
+I still love making games.
+                      </p>
+Like, a lot.
+                      </p>
+This isn't my secret announcement that I've hated game development this entire time.
+                      </p>
+I'm not making Floodgate against my will.
+                      </p>
+There isn't somebody standing behind me forcing me to open Unity every day.
+                      </p>
+I keep coming back because, underneath all the annoying shit, making games is still one of my favorite things to do.
+                      </p>
+There is a feeling I get when something finally works that I don't really know how to describe.
+                      </p>
+You have something in your head.
+                      </p>
+Maybe it's a mechanic.
+                      </p>
+Maybe it's a room.
+                      </p>
+Maybe it's an entire game.
+                      </p>
+At first it doesn't exist anywhere except your brain.
+                      </p>
+Then you make some objects.
+                      </p>
+Write some code.
+                      </p>
+Break the code.
+                      </p>
+Fix the code.
+                      </p>
+Break something completely unrelated.
+                      </p>
+Fix that.
+                      </p>
+Press Play.
+                      </p>
+And suddenly—
+                      </p>
+it's there.
+                      </p>
+You can walk around inside something that didn't exist yesterday.
+                      </p>
+That's cool.
+                      </p>
+I don't think that's ever stopped being cool to me.
+                      </p>
+Sometimes I'll finish an area and just walk through it.
+                      </p>
+Not testing anything.
+                      </p>
+Not looking for bugs.
+                      </p>
+Just walking around.
+                      </p>
+Because I made that.
+                      </p>
+There was nothing there before.
+                      </p>
+Now there's a place.
+                      </p>
+Or I'll implement some stupid mechanic and spend the next ten minutes screwing around with it instead of continuing development.
+                      </p>
+That's probably not very productive.
+                      </p>
+I don't care.
+                      </p>
+That's the fun part.
+                      </p>
+I like programming.
+                      </p>
+Even when programming occasionally makes me want to throw something directly into the sun.
+                      </p>
+I like designing worlds.
+                      </p>
+I like making music.
+                      </p>
+I like coming up with mechanics.
+                      </p>
+I like making stupid jokes and hiding them in games.
+                      </p>
+I like watching something slowly transform from:
+                      </p>
+cube
+                      </p>
+into:
+                      </p>
+slightly more complicated cube
+                      </p>
+into:
+                      </p>
+wait what the- this is actually a video game
+                      </p>
+And burnout doesn't erase any of that.
+                      </p>
+That's something I think I needed to understand.
+                      </p>
+Loving something doesn't mean loving every second of doing it.
+                      </p>
+You can love drawing and hate the drawing you're currently working on.
+                      </p>
+You can love programming and despise one particular bug.
+                      </p>
+You can love making music and spend an hour making something that sounds like complete shit.
+                      </p>
+And you can love making games while occasionally looking at the game you're making and thinking:
+                      </p>
+I would rather do literally anything else right now.
+                      </p>
+That's okay.
+                      </p>
+The part I'm trying to figure out is how to handle that without immediately abandoning everything.
+                      </p>
+I don't want my solution to burnout to be:
+                      </p>
+START ANOTHER GAME.
+                      </p>
+Because eventually I'll burn out on that one too.
+                      </p>
+And then I'll start another one.
+                      </p>
+And another.
+                      </p>
+And I'll have fifty really cool first halves of games and nothing finished.
+                      </p>
+But I also don't want the solution to be:
+                      </p>
+FORCE YOURSELF TO WORK UNTIL MORALE IMPROVES.
+                      </p>
+Because that's stupid too.
+                      </p>
+If I turn game development into homework, eventually I'm going to treat it like homework.
+                      </p>
+I don't want that.
+                      </p>
+I want to learn how to finish things without destroying the reason I wanted to make them in the first place.
+                      </p>
+Maybe that means making less progress some days.
+                      </p>
+Maybe it means taking breaks.
+                      </p>
+Maybe it means letting myself make something stupid on the side after I've made some progress on the main thing.
+                      </p>
+Maybe some days "progress" is an entire area.
+                      </p>
+Maybe other days it's a door.
+                      </p>
+Whatever.
+                      </p>
+As long as the game keeps moving.
+                      </p>
+Floodgate doesn't need to consume every second of my free time in order to eventually exist.
+                      </p>
+So yeah.
+                      </p>
+I'm tired.
+                      </p>
+I'm a little burned out.
+                      </p>
+Sometimes I open Unity and immediately want to close Unity.
+                      </p>
+Sometimes I'd rather sleep.
+                      </p>
+Sometimes I'd rather do literally anything except the game I'm supposed to be making.
+                      </p>
+But I still love this.
+                      </p>
+Floodgate will keep moving.
+                      </p>
+Maybe slowly sometimes.
+                      </p>
+Maybe with breaks.
+                      </p>
+Maybe while I make stupid side projects because apparently I have the attention span of a fucking squirrel whenever I see something cool.
+                      </p>
+But it'll move.
+                      </p>
+I don't need to love every second of making a game to love making games.
+                      </p>
+And I don't need to work myself into the ground to prove that I care about something.
+                      </p>
+I just need to keep going.
+                      </p>
+Anyway.
+                      </p>
+See ya.
+                      </p>
+                      </p>
+          
+        </div>
+
+
+        <a
+            href="blog.html"
+            class="back"
+        >
+            ← Back to Blog
+        </a>
+
+    </main>
+
+
+</body>
+
+</html>
