@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,34 +11,19 @@
 
     <title>Blog - .Json</title>
 
-
     <style>
-
-        /* =========================================
-           COLORS
-           ========================================= */
-
         :root {
             --background: #ffffff;
-
             --bar-color: #a545a5;
             --bar-text: #ffffff;
-
             --post-title: #ef5a5a;
             --text-color: #111111;
-
             --max-width: 1100px;
         }
-
-
-        /* =========================================
-           RESET
-           ========================================= */
 
         * {
             box-sizing: border-box;
         }
-
 
         html,
         body {
@@ -61,14 +45,12 @@
             overflow-y: auto;
         }
 
-
         /* =========================================
            TOP BAR
            ========================================= */
 
         .topbar {
             width: 100%;
-
             min-height: 75px;
 
             background: var(--bar-color);
@@ -80,7 +62,6 @@
             z-index: 100;
         }
 
-
         .nav {
             width: 92%;
             max-width: var(--max-width);
@@ -88,11 +69,9 @@
             margin: 0 auto;
 
             display: flex;
-
             justify-content: space-between;
             align-items: center;
         }
-
 
         .logo {
             color: var(--bar-text);
@@ -103,15 +82,11 @@
             font-weight: bold;
         }
 
-
         .links {
             display: flex;
-
             align-items: center;
-
             gap: 35px;
         }
-
 
         .links a {
             color: var(--bar-text);
@@ -125,7 +100,6 @@
             border-bottom: 2px solid transparent;
         }
 
-
         .links a:hover {
             opacity: 0.8;
 
@@ -133,9 +107,8 @@
                 var(--bar-text);
         }
 
-
         /* =========================================
-           BLOG AREA
+           BLOG
            ========================================= */
 
         .blog {
@@ -151,7 +124,6 @@
                 70px 0 100px;
         }
 
-
         /* =========================================
            POST
            ========================================= */
@@ -160,7 +132,6 @@
             width: 100%;
 
             display: flex;
-
             align-items: center;
 
             gap: 60px;
@@ -168,11 +139,9 @@
             margin-bottom: 110px;
         }
 
-
         .post.reverse {
             flex-direction: row-reverse;
         }
-
 
         /* =========================================
            IMAGE
@@ -181,7 +150,6 @@
         .post-image {
             width: 50%;
         }
-
 
         .post-image img {
             display: block;
@@ -194,7 +162,6 @@
             background: #dddddd;
         }
 
-
         /* =========================================
            TEXT
            ========================================= */
@@ -202,7 +169,6 @@
         .post-text {
             width: 50%;
         }
-
 
         .post-text h2 {
             margin:
@@ -216,22 +182,15 @@
             line-height: 1.3;
         }
 
-
         .post-text p {
             font-size: 15px;
 
             line-height: 1.7;
         }
 
-
         .date {
             font-weight: bold;
         }
-
-
-        /* =========================================
-           READ MORE
-           ========================================= */
 
         .read-more {
             color: var(--post-title);
@@ -241,30 +200,25 @@
             font-size: 14px;
         }
 
-
         .read-more:hover {
             opacity: 0.7;
         }
-
 
         /* =========================================
            MOBILE
            ========================================= */
 
         @media (max-width: 750px) {
-
             .topbar {
                 padding:
                     20px 0;
             }
-
 
             .nav {
                 flex-direction: column;
 
                 gap: 15px;
             }
-
 
             .links {
                 flex-wrap: wrap;
@@ -274,7 +228,6 @@
                 gap: 20px;
             }
 
-
             .post,
             .post.reverse {
                 flex-direction: column;
@@ -282,25 +235,21 @@
                 gap: 30px;
             }
 
-
             .post-image,
             .post-text {
                 width: 100%;
             }
 
-
             .post-image img {
                 height: auto;
             }
         }
-
     </style>
 
 </head>
 
 
 <body>
-
 
     <!-- =====================================
          TOP BAR
@@ -324,21 +273,17 @@
                     Home
                 </a>
 
-
                 <a href="blog.html">
                     Blog
                 </a>
-
 
                 <a href="games.html">
                     Games
                 </a>
 
-
                 <a href="about.html">
                     About
                 </a>
-
 
                 <a
                     href="https://charlieclip.itch.io/"
@@ -364,8 +309,54 @@
 
 
         <!-- =====================================
-             POST 9
+             POST 10
              NEWEST POST
+             ===================================== -->
+
+        <article class="post reverse">
+
+            <div class="post-image">
+
+                <img
+                    src="images/post10.png"
+                    alt="Post 10"
+                >
+
+            </div>
+
+
+            <div class="post-text">
+
+                <h2>
+                    September Floodgate Progress Update!!!
+                </h2>
+
+
+                <p>
+                    We're halfway through the rooms now. Somehow this is becoming an actual game.
+                </p>
+
+
+                <p class="date">
+                    9/12/26
+                </p>
+
+
+                <a
+                    href="post10.html"
+                    class="read-more"
+                >
+                    Read More
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             POST 9
              ===================================== -->
 
         <article class="post">
