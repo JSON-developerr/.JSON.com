@@ -1,3 +1,59 @@
+Sunday 4:02 PM
+Pasted text(20260913-200222).txt
+Document
+replace this script so
+after you enter the shop and hear the voice lines of entering or returning after 10 seconds 1 of 10 voice lines play with 10 seconds between each one
+
+
+Monday 6:49 PM
+Pasted text(20260914-224850).txt
+Document
+update and replace this script so
+theres a new inspector thingy, off by defualt, 
+when turned on, opening that door garrontees an angler spawn and wont could the angler counter for 1 door
+
+Pasted text(20260918-001054).txt
+Document
+have this include 11
+Pasted text(20260918-002232).txt
+Document
+replace this, make the H1 headder font a bit smaller 
+
+
+
+Yep — your main title and the section headings are all using <h1>, so the current clamp(2.2rem, 6vw, 4.2rem) makes all of them pretty huge.
+
+Replace that h1 CSS with:
+
+h1 {
+    margin: 0 0 8px;
+
+    color: var(--post-title);
+
+    font-size: clamp(
+        1.8rem,
+        4.5vw,
+        3.2rem
+    );
+
+    line-height: 1.1;
+}
+
+That'll make Hollow Knight: Together Is Alive!!! and headings like OLD AREAS ARE GETTING REDONE!!, THE PALE CHILD GOT BUFFED, and OTHER TINY THINGS!!! noticeably smaller without making them tiny.
+
+replace
+
+YEAH 😭 — full replacement, got it. I’ll replace the entire file with the same Blog 11 content and just make the <h1> headers smaller.
+
+Please re-upload/paste the post11.html file here — I have its contents in the prior turn for reference, but I need the actual file available to generate the replacement download cleanly.
+
+Pasted text(20260918-002450).txt
+Document
+
+YEP — replaced the whole thing. The original H1 size went up to 4.2rem; I reduced it to 3.2rem max and adjusted the scaling so all those big section headers are a bit smaller.
+
+Download the full replacement post11.html 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,12 +152,12 @@
             color: var(--post-title);
 
             font-size: clamp(
-                2.2rem,
-                6vw,
-                4.2rem
+                1.8rem,
+                4.5vw,
+                3.2rem
             );
 
-            line-height: 1.05;
+            line-height: 1.1;
         }
 
         .date {
@@ -488,3 +544,5 @@ See ya.
 
 </body>
 </html>
+post11.html
+HTML
