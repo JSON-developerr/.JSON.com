@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Front Progress Update - .Json</title>
+
+    <style>
+        :root {
+            --background: #ffffff;
+            --bar-color: #a545a5;
+            --bar-text: #ffffff;
+            --title-color: #ef5a5a;
+            --text-color: #111111;
+            --max-width: 900px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            background: var(--background);
+            color: var(--text-color);
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .topbar {
+            width: 100%;
+            min-height: 75px;
+            background: var(--bar-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            width: 92%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--bar-text);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .links a {
+            color: var(--bar-text);
+            text-decoration: none;
+            font-size: 15px;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .links a:hover {
+            opacity: 0.8;
+            border-bottom-color: var(--bar-text);
+        }
+
+        .article {
+            width: 92%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 70px 0 120px;
+        }
+
+        .article > h1 {
+            margin: 0 0 15px;
+            color: var(--title-color);
+            font-size: 42px;
+            line-height: 1.2;
+        }
+
+        .date {
+            margin: 0 0 40px;
+            font-weight: bold;
+            opacity: 0.75;
+        }
+
+        .hero {
+            display: block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            margin: 0 0 45px;
+            background: #eeeeee;
+        }
+
+        article {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        article p {
+            margin: 0 0 25px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        article h1, article h2 {
+            margin: 55px 0 20px;
+            color: var(--title-color);
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        article img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+        }
+
+        article audio {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 25px 0 35px;
+        }
+
+        article a { color: var(--title-color); }
+
+        .audio-note {
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 50px;
+            color: var(--title-color);
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        .back:hover { opacity: 0.7; }
+
+        @media (max-width: 750px) {
+            .topbar { padding: 20px 0; }
+            .nav { flex-direction: column; gap: 15px; }
+            .links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+            .article { padding-top: 45px; }
+            .article > h1 { font-size: 34px; }
+            article h1, article h2 { font-size: 26px; }
+            article, article p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="nav">
+            <a href="index.html" class="logo">.Json</a>
+            <nav class="links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="Presentation.html">Presentations</a>
+                <a href="Drawing.html">Drawings</a>
+                <a href="https://charlieclip.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article">
+        <h1>Cold Front Progress Update</h1>
+
+        <p class="date">11/4/2026</p>
+
+        <img class="hero" src="images/post20.png" alt="Post 20 main image">
+
+        <article>
+hey! it's been a little while since my last post, so i figured i'd give a small update on what's been happening.
+</p>
+as i mentioned in my last post, i've been trying to slow things down a bit after finishing HTK and Floodgate. and honestly, i've been doing just that! i've spent a good amount of time playing Zelda games, taking a break, and generally not worrying too much about development.
+</p>
+HOWEVER, Cold Front is still being worked on!
+</p>
+since my last post, i've actually gotten a decent amount done. i've written two new sets of dialogue, made a new puzzle, composed a few tracks for the game's OST, and finally finished the starting area!
+</p>
+i've also started working on the village, which is going to be one of the main story locations of the game. 
+</p>
+alongside that, i've made the main overworld area (think Hyrule Field), reworked the player movement, and added a rolling mechanic!
+</p>
+so yeah, Cold Front is slowly starting to come together.
+</p>
+also, did i mention this game has an ORIGINAL OST?
+</p>
+i've been composing the music myself, and i've got three tracks made so far! here's a little sneak peek at one of them.
+</p>
+<audio
+    src="10. Demo Credits.mp3"
+    controls
+    style="width: 100%; max-width: 800px; display: block; margin: 25px auto;"
+>
+    Your browser does not support MP3 audio.
+</audio>
+</p>
+
+i've been having a lot of fun experimenting with the music, and i'm hoping to have a pretty good soundtrack by the time the game releases.
+</p>
+and one more thing...
+</p>
+i'm currently hoping to release a DEMO for Cold Front sometime in early 2027!
+</p>
+this isn't a confirmed date or anything, and it's definitely a MAYBE, but i'd really like to have something playable out there for people to try next year.
+</p>
+as for everything else, i'm still taking things at my own pace. i'm not planning on going back to the nonstop development schedule i had before, and i don't want to rush Cold Front just to get it finished.
+</p>
+anyway, that's pretty much everything!
+</p>
+see ya!
+
+</p>
+
+
+
+        </article>
+
+        <a class="back" href="blog.html">&#8592; Back to Blog</a>
+    </main>
+</body>
+</html>
