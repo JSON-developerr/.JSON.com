@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enter Code - .Json</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* CENTER CONTAINER */
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* CODE BOX */
+
+        .code-box {
+            width: 220px;
+            height: 65px;
+            background: #252525;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #333333;
+        }
+
+        /* INPUT */
+
+        .code-input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+
+            color: #ffffff;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            text-align: center;
+            letter-spacing: 8px;
+
+            padding-left: 8px;
+        }
+
+        .code-input::placeholder {
+            color: #555555;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form id="codeForm">
+
+        <div class="code-box">
+
+            <input
+                class="code-input"
+                id="codeInput"
+                type="text"
+                maxlength="4"
+                autocomplete="off"
+                spellcheck="false"
+                autofocus
+            >
+
+        </div>
+
+    </form>
+
+    <script>
+
+        const form = document.getElementById("codeForm");
+        const input = document.getElementById("codeInput");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const code = input.value;
+
+            if (code === "1432") {
+
+                // CORRECT CODE
+                window.location.href =
+                "https://json-developerr.github.io/.JSON.com/theroom.html";
+
+            } else {
+
+                // WRONG CODE
+                window.location.href =
+                "https://json-developerr.github.io/.JSON.com/index.html";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
