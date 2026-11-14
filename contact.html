@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enter Code - .Json</title>
+    <title>Website Tabs - .Json</title>
 
     <style>
         * {
@@ -17,7 +17,7 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100%;
+            min-height: 100%;
             background: #000000;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -26,212 +26,106 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
+            padding: 30px 15px;
         }
 
-        .container {
+        /* MAIN CONTAINER */
+
+        .menu {
+            width: 260px;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        /* TITLE */
+
+        .title {
+            color: #ffffff;
+            font-size: 23px;
+            font-weight: normal;
+            margin-bottom: 20px;
             text-align: center;
         }
 
-        .message {
-            color: #ffffff;
-            font-size: 14px;
-            margin-bottom: 8px;
+        /* LINKS */
+
+        .tabs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .submessage {
-            color: #ffffff;
-            font-size: 12px;
-            margin-bottom: 18px;
-        }
+        .tab {
+            width: 100%;
+            height: 48px;
 
-        .code-box {
-            width: 220px;
-            height: 65px;
             background: #252525;
+            border: 1px solid #333333;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #333333;
-        }
 
-        .code-input {
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            border: none;
-            outline: none;
             color: #ffffff;
             font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            padding: 8px;
+            text-decoration: none;
+
+            transition: background 0.15s ease;
         }
 
-        .code-input::placeholder {
-            color: #555555;
-        }
-
-        .submit-button {
-            width: 220px;
-            height: 40px;
-            margin-top: 12px;
-            background: #252525;
-            border: 1px solid #333333;
-            color: #ffffff;
-            font-size: 13px;
-            font-family: Arial, Helvetica, sans-serif;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .submit-button:hover {
-            background: #353535;
-        }
-
-        .error {
-            color: #ff3333;
-            font-size: 12px;
-            margin-top: 10px;
-            display: none;
-        }
-
-        /* SENT SCREEN */
-
-        #sentScreen {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000000;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            font-size: 24px;
-            font-family: Arial, Helvetica, sans-serif;
+        .tab:hover {
+            background: #383838;
         }
 
     </style>
-
 </head>
 
 <body>
 
-    <div class="container" id="mainContainer">
+    <div class="menu">
 
-        <div class="message">
-            If you'd like, leave your email here.
+        <div class="title">Website Tabs</div>
+
+        <div class="tabs">
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/index.html">
+                Home
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/blog.html">
+                Blog
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/about.html">
+                About
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/games.html">
+                Games
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/Presentation.html">
+                Presentations
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/Drawing.html">
+                Drawings
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/theroom.html">
+                Json's Room
+            </a>
+
+            <a class="tab" href="https://json-developerr.github.io/.JSON.com/anend.html">
+                The Archives
+            </a>
+
         </div>
 
-        <div class="submessage">
-            I'll make sure something finds its way to you.
-        </div>
-
-        <form id="codeForm">
-
-            <div class="code-box">
-
-                <input
-                    class="code-input"
-                    id="codeInput"
-                    type="text"
-                    placeholder="Email"
-                    autocomplete="off"
-                    spellcheck="false"
-                >
-
-            </div>
-
-            <button class="submit-button" type="submit">
-                Submit
-            </button>
-
-            <div class="error" id="errorMessage">
-                Theres no entry
-            </div>
-
-        </form>
-
     </div>
-
-    <!-- SENT SCREEN -->
-
-    <div id="sentScreen">
-        Sent
-    </div>
-
-    <script>
-
-        const form = document.getElementById("codeForm");
-        const input = document.getElementById("codeInput");
-        const error = document.getElementById("errorMessage");
-
-        const mainContainer = document.getElementById("mainContainer");
-        const sentScreen = document.getElementById("sentScreen");
-
-        form.addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            const text = input.value.trim();
-
-            // EMPTY INPUT
-
-            if (text === "") {
-
-                error.style.display = "block";
-                return;
-
-            }
-
-            // HIDE ERROR
-
-            error.style.display = "none";
-
-            // PREPARE EMAIL
-
-            const subject = "You've got mail";
-
-            const message =
-                "https://json-developerr.github.io/.JSON.com/anend.html";
-
-            const mailto =
-                "mailto:" + encodeURIComponent(text) +
-                "?subject=" + encodeURIComponent(subject) +
-                "&body=" + encodeURIComponent(message);
-
-            // SHOW SENT SCREEN
-
-            mainContainer.style.display = "none";
-            sentScreen.style.display = "flex";
-
-            // OPEN EMAIL APPLICATION
-
-            window.location.href = mailto;
-
-            // REDIRECT AFTER 3 SECONDS
-
-            setTimeout(function() {
-
-                window.location.href =
-                    "https://json-developerr.github.io/.JSON.com/index.html";
-
-            }, 3000);
-
-        });
-
-        // HIDE ERROR WHEN TYPING
-
-        input.addEventListener("input", function() {
-            error.style.display = "none";
-        });
-
-    </script>
 
 </body>
-
 </html>
