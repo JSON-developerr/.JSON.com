@@ -5,16 +5,11 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Blog - .Json</title>
 
     <style>
-
-        /* =========================================
-           COLORS / SIZES
-        ========================================= */
 
         :root {
             --background: #e9e7e2;
@@ -26,11 +21,6 @@
             --max-width: 1100px;
         }
 
-
-        /* =========================================
-           RESET
-        ========================================= */
-
         * {
             box-sizing: border-box;
         }
@@ -39,73 +29,47 @@
         body {
             margin: 0;
             padding: 0;
-
             width: 100%;
             min-height: 100%;
-
             background: var(--background);
             color: var(--text-color);
-
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
+            font-family: Arial, Helvetica, sans-serif;
             overflow-x: hidden;
         }
 
-
-        /* =========================================
-           TOP BAR
-        ========================================= */
+        /* TOP BAR */
 
         .topbar {
             width: 100%;
             min-height: 75px;
-
             background: var(--bar-color);
-
             display: flex;
             align-items: center;
-
             position: relative;
             z-index: 100;
         }
 
-
-        /* =========================================
-           NAVIGATION
-        ========================================= */
+        /* NAVIGATION */
 
         .nav {
             width: 92%;
             max-width: var(--max-width);
-
             margin: 0 auto;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-
-        /* =========================================
-           WEBSITE NAME
-        ========================================= */
+        /* WEBSITE NAME */
 
         .logo {
             color: var(--bar-text);
-
             text-decoration: none;
-
             font-size: 24px;
             font-weight: bold;
         }
 
-
-        /* =========================================
-           NAV LINKS
-        ========================================= */
+        /* NAV LINKS */
 
         .links {
             display: flex;
@@ -115,56 +79,36 @@
 
         .links a {
             color: var(--bar-text);
-
             text-decoration: none;
-
             font-size: 15px;
-
             padding: 8px 0;
-
             border-bottom: 2px solid transparent;
-
-            transition:
-                opacity 0.15s,
-                border-color 0.15s;
+            transition: opacity 0.15s, border-color 0.15s;
         }
 
         .links a:hover {
             opacity: 0.8;
-
             border-bottom-color: var(--bar-text);
         }
 
-
-        /* =========================================
-           BLOG
-        ========================================= */
+        /* BLOG */
 
         .blog {
             width: 92%;
             max-width: var(--max-width);
-
             margin: 0 auto;
-
             padding: 70px 0 100px;
         }
 
-
-        /* =========================================
-           BLOG POST
-        ========================================= */
+        /* BLOG POST */
 
         .post-link {
             display: flex;
             align-items: center;
-
             gap: 60px;
-
             width: 100%;
-
             color: inherit;
             text-decoration: none;
-
             transition: opacity 0.15s;
         }
 
@@ -172,24 +116,16 @@
             opacity: 0.85;
         }
 
-
-        /* =========================================
-           BLACK IMAGE BOX
-        ========================================= */
+        /* BLACK IMAGE BOX */
 
         .post-image {
             width: 50%;
             height: 340px;
-
             background: #000000;
-
             flex-shrink: 0;
         }
 
-
-        /* =========================================
-           POST TEXT
-        ========================================= */
+        /* POST TEXT */
 
         .post-text {
             width: 50%;
@@ -197,17 +133,13 @@
 
         .post-text h2 {
             margin: 0 0 20px;
-
             color: var(--post-title);
-
             font-size: 28px;
-
             line-height: 1.3;
         }
 
         .post-text p {
             font-size: 15px;
-
             line-height: 1.7;
         }
 
@@ -217,16 +149,11 @@
 
         .read-more {
             color: var(--link-color);
-
             text-decoration: underline;
-
             font-size: 14px;
         }
 
-
-        /* =========================================
-           MOBILE
-        ========================================= */
+        /* MOBILE */
 
         @media (max-width: 750px) {
 
@@ -269,13 +196,9 @@
 
 </head>
 
-
 <body>
 
-
-    <!-- =====================================
-         TOP BAR
-    ===================================== -->
+    <!-- TOP BAR -->
 
     <header class="topbar">
 
@@ -289,7 +212,6 @@
             >
                 .Json
             </a>
-
 
             <!-- NAVIGATION -->
 
@@ -309,16 +231,12 @@
 
     </header>
 
-
-
-
+    <!-- BLOG POST -->
 
     <main class="blog">
 
-
-
         <a
-            href="postM.html"
+            href="https://json-developerr.github.io/.JSON.com/missing.html"
             class="post-link"
             aria-label="."
         >
@@ -326,7 +244,6 @@
             <!-- BLACK IMAGE BOX -->
 
             <div class="post-image"></div>
-
 
             <!-- POST TEXT -->
 
@@ -341,7 +258,7 @@
                 </p>
 
                 <p class="date">
-                   .
+                    .
                 </p>
 
                 <span class="read-more">
@@ -352,9 +269,7 @@
 
         </a>
 
-
     </main>
-
 
 </body>
 
