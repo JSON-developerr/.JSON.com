@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,19 +101,35 @@
 
             event.preventDefault();
 
-            const code = input.value;
+            const code = input.value.trim().toUpperCase();
 
-            if (code === "1432") {
+            // CODE DESTINATIONS
 
-                // CORRECT CODE
-                window.location.href =
-                "https://json-developerr.github.io/.JSON.com/theroom.html";
+            const destinations = {
+
+                "1432":
+                    "https://json-developerr.github.io/.JSON.com/theroom.html",
+
+                "634S":
+                    "https://json-developerr.github.io/.JSON.com/contact.html",
+
+                "9127":
+                    "https://json-developerr.github.io/.JSON.com/missing.html"
+
+            };
+
+            // CHECK CODE
+
+            if (destinations[code]) {
+
+                window.location.href = destinations[code];
 
             } else {
 
                 // WRONG CODE
+
                 window.location.href =
-                "https://json-developerr.github.io/.JSON.com/index.html";
+                    "https://json-developerr.github.io/.JSON.com/index.html";
 
             }
 
