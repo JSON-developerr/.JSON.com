@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enter Email - .Json</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* CENTER CONTAINER */
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* TEXT ABOVE BOX */
+
+        .description {
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .sub-description {
+            color: #ffffff;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        /* EMAIL BOX */
+
+        .code-box {
+            width: 220px;
+            height: 65px;
+            background: #252525;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #333333;
+        }
+
+        /* INPUT */
+
+        .code-input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+
+            color: #ffffff;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            text-align: center;
+            padding: 8px;
+        }
+
+        .code-input::placeholder {
+            color: #555555;
+        }
+
+        /* SUBMIT BUTTON */
+
+        .submit-button {
+            width: 220px;
+            height: 40px;
+            margin-top: 12px;
+
+            background: #252525;
+            border: 1px solid #333333;
+
+            color: #ffffff;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .submit-button:hover {
+            background: #353535;
+        }
+
+        /* ERROR / SUCCESS TEXT */
+
+        .message {
+            font-size: 13px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .error {
+            color: #ff3333;
+        }
+
+        .success {
+            color: #ffffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="description">
+            If you'd like, leave your email here.
+        </div>
+
+        <div class="sub-description">
+            I'll make sure something finds its way to you.
+        </div>
+
+        <form id="codeForm">
+
+            <div class="code-box">
+
+                <input
+                    class="code-input"
+                    id="codeInput"
+                    type="email"
+                    placeholder="Your email..."
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+            <button class="submit-button" type="submit">
+                Submit
+            </button>
+
+            <div id="errorMessage" class="message error">
+                Theres no entry
+            </div>
+
+            <div id="successMessage" class="message success">
+                Something is on its way.
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- EMAILJS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+
+        // =====================================
+        // EMAILJS SETUP
+        // =====================================
+
+        emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY"
+        });
+
+
+        // =====================================
+        // FORM
+        // =====================================
+
+        const form = document.getElementById("codeForm");
+        const input = document.getElementById("codeInput");
+
+        const errorMessage = document.getElementById("errorMessage");
+        const successMessage = document.getElementById("successMessage");
+
+        const button = document.querySelector(".submit-button");
+
+
+        form.addEventListener("submit", async function(event) {
+
+            event.preventDefault();
+
+            errorMessage.style.display = "none";
+            successMessage.style.display = "none";
+
+            const email = input.value.trim();
+
+            // EMPTY ENTRY
+
+            if (email === "") {
+
+                errorMessage.textContent = "Theres no entry";
+                errorMessage.style.display = "block";
+
+                return;
+            }
+
+            // INVALID EMAIL
+
+            if (!input.validity.valid) {
+
+                errorMessage.textContent = "Invalid email";
+                errorMessage.style.display = "block";
+
+                return;
+            }
+
+            // SEND EMAIL
+
+            button.disabled = true;
+            button.textContent = "Sending...";
+
+            try {
+
+                await emailjs.send(
+                    "YOUR_SERVICE_ID",
+                    "YOUR_TEMPLATE_ID",
+                    {
+                        to_email: email,
+                        subject: "You've got mail",
+                        message: "https://json-developerr.github.io/.JSON.com/anend.html"
+                    }
+                );
+
+                successMessage.style.display = "block";
+
+                input.value = "";
+
+            } catch (error) {
+
+                errorMessage.textContent = "Something went wrong.";
+                errorMessage.style.display = "block";
+
+                console.error(error);
+
+            }
+
+            button.disabled = false;
+            button.textContent = "Submit";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
