@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enter Code - .Json</title>
+    <title>howitwasmade - Json.</title>
 
     <style>
 
@@ -14,56 +15,53 @@
             box-sizing: border-box;
         }
 
-        html, body {
+        html,
+        body {
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100%;
+            min-height: 100%;
             background: #000000;
+            color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        /* CENTER CONTAINER */
 
         body {
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 50px 20px;
         }
 
-        /* CODE BOX */
-
-        .code-box {
-            width: 220px;
-            height: 65px;
-            background: #252525;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #333333;
-        }
-
-        /* INPUT */
-
-        .code-input {
+        .container {
             width: 100%;
-            height: 100%;
-            background: transparent;
-            border: none;
-            outline: none;
-
-            color: #ffffff;
-            font-size: 26px;
-            font-family: Arial, Helvetica, sans-serif;
-
+            max-width: 650px;
             text-align: center;
-            letter-spacing: 8px;
-
-            padding-left: 8px;
+            margin: auto;
         }
 
-        .code-input::placeholder {
-            color: #555555;
+        .message {
+            font-size: 17px;
+            line-height: 1.9;
+            font-weight: normal;
+        }
+
+        .message p {
+            margin: 0 0 24px;
+        }
+
+        @media (max-width: 600px) {
+
+            .message {
+                font-size: 15px;
+                line-height: 1.85;
+            }
+
+            .message p {
+                margin-bottom: 22px;
+            }
+
         }
 
     </style>
@@ -72,53 +70,256 @@
 
 <body>
 
-    <form id="codeForm">
+    <main class="container">
 
-        <div class="code-box">
+        <div class="message">
 
-            <input
-                class="code-input"
-                id="codeInput"
-                type="text"
-                maxlength="4"
-                autocomplete="off"
-                spellcheck="false"
-                autofocus
-            >
+            <p>
+My Journey Making OOT-IB
+            </p>
+This document is basically my journey making OOT-IB! I'll be going through the development process, what I worked on each day, some of the problems I ran into, and why I decided to make this project in the first place.
+            </p>
+This wasn't originally supposed to be anything big. It started as a little Unity experiment, but as I kept working on it, I started adding more and more things. So, here's how it all happened!
+            </p>
+            </p>
+ November 7th - Getting Started
+            </p>
+Before I can officially call this project started, there are two things I need to get working first.
+            </p>
+- Basic player movement and controls.
+                        </p>
+- A player model that's properly rigged and animated.
+            </p>
+Once those two things are done, I'll consider the actual game development started. Pretty simple, right?
+            </p>
+Now, the first thing I need to work on is the player. I have a couple of options here. I could either make a player model completely from scratch, or find some sort of existing template and modify it to fit what I need.
+            </p>
+Since this is supposed to be a bit of a challenge, I decided to start from scratch. Probably not the easiest option, but hey, that's kind of the point of this project.
+            </p>
+I won't really go into the boring stuff like setting up gravity, collision, and all the other basic Unity things. Instead, I'll talk about something that actually gave me a bit of trouble: animations.
+            </p>
+I already know how to make 3D animations in Blender, so creating the actual animations wasn't really the problem. The problem was getting them INTO Unity and making them work properly with the player.
+            </p>
+I ended up making some basic player animations, putting them into Unity's Animator, and then spending around 4 HOURS trying to figure out how to actually implement them into the game.
+            </p>
+Four. Hours.
+            </p>
+            well I mean... thats like nothing now but still.
+                        </p>
+And after all that, I ended up using a pretty stupid solution. It definitely isn't the most elegant way of doing things, but it works, and honestly, that's good enough for now.
+            </p>
+I was also a little worried about recreating all the different areas from Ocarina of Time. Making entire environments from scratch would take quite a while, especially for a project that's supposed to be relatively small.
+            </p>
+Luckily, I managed to find a website with 3D models of some of the original areas! That saved me quite a bit of time.
+            </p>
+Of course, I still have to do things like materials and textures, but that's a problem for another day.
+            </p>
+Overall, a pretty good start. The player is slowly coming together, and I finally have something I can actually move around with.
+            </p>
+November 8th - Player Improvements & UI
+            </p>
+Okay, today I wanted to focus on improving the player.
+            </p>
+Yesterday's animations were really just placeholders to get everything working. They weren't supposed to be the final animations, so I decided to go back and redo some of them, as well as add a rolling mechanic.
+            </p>
+Rolling is one of those little things that makes the game feel a lot more like Ocarina of Time, so I definitely wanted to get that working.
+            </p>
+I also started working on the UI!
+            </p>
+For the UI, I'm taking inspiration from both the original Ocarina of Time interface and the newer Switch 2 remake. I really like how both of them handle their menus and HUD elements, so I wanted to combine some of those ideas into my own version.
+            </p>
+It's not meant to be an exact recreation of either one, but I do want it to feel familiar if you've played the original games.
+            </p>
+Alongside that, I added a few other basic systems.
+            </p>
+First, there's now a health system. Nothing particularly complicated, just a basic health display that allows the player to take damage.
+            </p>
+I also added a death animation, which is something I wanted to have working early on rather than leaving it until later.
+            </p>
+And, of course, I added Navi!
+            </p>
+There are also a few other little things, like the Lens of Truth. I'm trying to include some of those smaller details that make Ocarina of Time feel like Ocarina of Time.
+            </p>
+At this point, the project is starting to feel a lot less like a random Unity prototype and a lot more like an actual game.
+            </p>
+Still needs work, obviously, but we're getting somewhere!
+            </p>
+November 9th - 11th - Making Everything Work
+            </p>
+Over these few days, I mostly focused on finishing up the player and getting some of the more important gameplay systems working.
+            </p>
+Up until now, most of my attention had been on movement, animations, and the general player setup. But there's not much point in having a player that can walk around if they can't actually interact with the world.
+            </p>
+So, it's time to work on the gameplay stuff.
+            </p>
+One of the bigger things I worked on was combat.
+            </p>
+This includes the sword swinging, shield functionality.. again thats it.
+            </p>
+I also worked on climbing, which is another mechanic I wanted to include.
+            </p>
+A lot of these things are pretty important because they help make the player feel like they're actually playing a Zelda game rather than just controlling a character in a random Unity scene.
+            </p>
+It's also been a good opportunity to learn more about how Unity handles animations. There are quite a few things I haven't really had to deal with before, so this project has been a pretty good learning experience.
+            </p>
+I'm slowly getting to the point where the basic player systems are mostly finished.
+            </p>
+Which means I can finally start focusing more on the actual world!
+            </p>
+November 12th - Why Am I Making This?
+            </p>
+Alright, I think this is a good time to actually explain what this project is, why I'm making it, and where the idea came from.
+            </p>
+At the time of writing this, the Ocarina of Time Switch 2 remake came out five days ago, and I've already beaten it.
+            </p>
+I've always loved Ocarina of Time. It's one of those games that I've had a connection with for a pretty long time.
+            </p>
+When I was younger, I used to play the 3DS version with my little brother. We had this sort of arrangement where I'd play through the child dungeons, and he'd take care of the adult ones.
+            </p>
+Eventually, he ended up beating the entire game without me, which meant I never really got around to replaying it properly by myself.
+            </p>
+I've been meaning to go back and finish it on my own for years, but I just never got around to it.
+            </p>
+Then, at some point, I got that itch to play Ocarina of Time again.
+            </p>
+And wouldn't you know it, the Switch 2 remake was announced!
+            </p>
+When it finally released, I spent HOURS playing it. I absolutely loved it. The music, atmosphere, gameplay, environments, and just about everything else were amazing.
+            </p>
+It reminded me of why I loved this game in the first place.
+            </p>
+And that's when I got an idea.
+            </p>
+I wanted to make something of my own to show my appreciation for the Zelda series. Not necessarily a completely original game or some massive fan remake, but just a little project that combines some of the things I like about both versions.
+            </p>
+So I started thinking...
+            </p>
+What if I combined Ocarina of Time 3D and the Ocarina of Time Switch 2 remake?
+            </p>
+And well, that's pretty much how OOT-IB came to life!
+            </p>
+The idea is to take some elements from both versions and put them together into one project. It's also a chance for me to experiment with Unity, learn some new things, and see how far I can get with it.
+            </p>
+I don't really have any plans for this to become some enormous new game. That's not what I started it for.
+            </p>
+I just wanted to make something Zelda-related, have fun with it, and learn a few things along the way.
+            </p>
+And so far, it's been pretty fun!
+            </p>
+ November 13th - More Areas!
+            </p>
+Okay, so today I decided to expand the game a little bit.
+            </p>
+Originally, I only had Kokiri Forest available. It was basically the one area I had been using to test the player movement and everything else.
+            </p>
+But I thought... why stop there?
+            </p>
+I went ahead and started adding a few more areas to explore.
+            </p>
+The new additions are:
+            </p>
+- Hyrule Field
+                        </p>
+- Lon Lon Ranch
+                        </p>
+- Kakariko Village
+            </p>
+So now we have quite a few more places to visit!
+            </p>
+I'm using 3D map models I found on https://models.spriters-resource.com for these areas. Instead of having to recreate every single environment myself, I can use these models and focus more on getting everything set up inside Unity.
+            </p>
+For now, I've made teleporters that allow you to travel between the different locations.
+            </p>
+Nothing particularly fancy, but it gets the job done.
+            </p>
+It's actually pretty cool seeing the game expand like this. Going from one little area in Kokiri Forest to having multiple recognizable locations makes the whole project feel a lot bigger.
+            </p>
+I still have plenty of work to do with the environments, but at least there's now somewhere to go!
+            </p>
+Also, I think having multiple areas to explore makes this a much better test game than just running around the same forest forever.
+            </p>
+November 14th - Items, Shields & Tunics
+            </p>
+Today I decided to mess around with some of the items from Ocarina of Time.
+            </p>
+Specifically, I wanted to add the Slingshot, Boomerang, Deku Stick, and Deku Nut.
+            </p>
+Sounds simple enough, right?
+            </p>
+Well...
+            </p>
+I couldn't get them to work. At all.
+            </p>
+I spent some time trying to get the items working properly, but eventually decided that I'd rather spend that time on other features instead.
+            </p>
+So they're just HUD decorations.
+            </p>
+Yes. Very useful.
+            </p>
+Maybe I'll come back to them eventually, but for this version, they'll just have to sit there looking pretty.
+            </p>
+On the other hand, I did manage to get something else working!
+            </p>
+I added a menu that allows you to change your tunic and shield.
+            </p>
+For the tunics, you can switch between the different options, and the player's appearance changes accordingly.
+            </p>
+I also added a separate shield menu where you can switch between the available shields.
+            </p>
+And unlike the other items, these ACTUALLY WORK!
+            </p>
+It's a pretty small feature, but I think it adds a lot to the overall experience. It's also nice having a menu that's more than just something sitting on the screen.
+            </p>
+I'm happy with how these turned out, especially considering some of the other things I tried to implement today...
+            </p>
+            November 15th - Day & Night Cycle (And Release!)
+            </p>
+            </p>
+Today I added a day and night cycle to the game!
+            </p>
+It's a pretty simple system, but it makes a noticeable difference when exploring the different areas. Instead of everything being stuck at the same time of day, the environment can now transition between daytime, evening, and nighttime.
+            </p>
+I think this is one of those little features that makes the world feel a bit more alive.
+            </p>
+And honestly, I think this is a good place to stop for now.
+            </p>
+The player movement works, you can travel between multiple areas, there's basic combat, you can change your tunic and shield, and there's now a day and night cycle.
+            </p>
+Is it perfect? Absolutely not.
+            </p>
+Are some things unfinished? Yep.
+            </p>
+Do some of the items currently do absolutely nothing?
+            </p>
+Unfortunately, yes.
+            </p>
+But that's fine!
+            </p>
+Remember, this wasn't originally supposed to become my next big project. It was just meant to be a simple test game where I could experiment with Unity, learn how to properly implement 3D animations, and make something to show my appreciation for the Zelda series.
+            </p>
+Somewhere along the way, I ended up adding a lot more than I originally planned.
+            </p>
+And now, I think it's finally ready to be released as a little test game!
+            </p>
+I don't really want to keep adding things just for the sake of adding things. I think what I've got right now is enough to show what I was trying to make.
+            </p>
+Maybe I'll come back to it and add more stuff eventually, but for now, I'm happy with it.
+            </p>
+So, after a little over a week of development...
+            </p>
+OOT-IB IS OUT!
+            </p>
+Thanks for reading through this little development log
+            </p>
+
+ .Json
+            </p>
 
         </div>
 
-    </form>
-
-    <script>
-
-        const form = document.getElementById("codeForm");
-        const input = document.getElementById("codeInput");
-
-        form.addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            const code = input.value;
-
-            if (code === "1432") {
-
-                // CORRECT CODE
-                window.location.href =
-                "https://json-developerr.github.io/.JSON.com/theroom.html";
-
-            } else {
-
-                // WRONG CODE
-                window.location.href =
-                "https://json-developerr.github.io/.JSON.com/index.html";
-
-            }
-
-        });
-
-    </script>
+    </main>
 
 </body>
 
 </html>
+
