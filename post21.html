@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>November Newsletter! - .Json</title>
+
+    <style>
+        :root {
+            --background: #ffffff;
+            --bar-color: #a545a5;
+            --bar-text: #ffffff;
+            --title-color: #ef5a5a;
+            --text-color: #111111;
+            --max-width: 900px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            background: var(--background);
+            color: var(--text-color);
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .topbar {
+            width: 100%;
+            min-height: 75px;
+            background: var(--bar-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            width: 92%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--bar-text);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .links a {
+            color: var(--bar-text);
+            text-decoration: none;
+            font-size: 15px;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .links a:hover {
+            opacity: 0.8;
+            border-bottom-color: var(--bar-text);
+        }
+
+        .article {
+            width: 92%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 70px 0 120px;
+        }
+
+        .article > h1 {
+            margin: 0 0 15px;
+            color: var(--title-color);
+            font-size: 42px;
+            line-height: 1.2;
+        }
+
+        .date {
+            margin: 0 0 40px;
+            font-weight: bold;
+            opacity: 0.75;
+        }
+
+        .hero {
+            display: block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            margin: 0 0 45px;
+            background: #eeeeee;
+        }
+
+        article {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        article p {
+            margin: 0 0 25px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        article h1, article h2 {
+            margin: 55px 0 20px;
+            color: var(--title-color);
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        article img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+        }
+
+        article audio {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 25px 0 35px;
+        }
+
+        article a { color: var(--title-color); }
+
+        .audio-note {
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 50px;
+            color: var(--title-color);
+            text-decoration: underline;
+            font-size: 15px;
+        }
+
+        .back:hover { opacity: 0.7; }
+
+        @media (max-width: 750px) {
+            .topbar { padding: 20px 0; }
+            .nav { flex-direction: column; gap: 15px; }
+            .links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+            .article { padding-top: 45px; }
+            .article > h1 { font-size: 34px; }
+            article h1, article h2 { font-size: 26px; }
+            article, article p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="nav">
+            <a href="index.html" class="logo">.Json</a>
+            <nav class="links" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="Presentation.html">Presentations</a>
+                <a href="Drawing.html">Drawings</a>
+                <a href="https://charlieclip.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="article">
+        <h1>November Newsletter!</h1>
+
+        <p class="date">11/15/2026</p>
+
+        <img class="hero" src="images/post21.png" alt="Post 21 main image">
+
+        <article>
+Well, November has been pretty busy!
+
+</p>
+I've been working on a few different things this month, apparently found excuse to make another Zelda type game.
+</p>
+So, let's go through what's been happening!
+</p>
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+ <h1>
+OOT-IB IS OUT!
+</h1>
+          [image here]
+</p>
+For those who haven't seen it yet, OOT-IB is a little Unity project where I attempt to combine elements from Ocarina of Time 3D and the Nintendo Switch 2 remake.
+</p>
+You can explore a few familiar locations, mess around with the player controls, use your sword and shield, change your tunic, and a few other things!
+</p>
+This project actually started as a pretty simple experiment for the release of the new Switch 2 Remaster, And I wanted to learn how to properly implement 3D animations in Unity, and I thought making a little Zelda-inspired project would be a fun way to do that.
+</p>
+And, well...
+</p>
+It's definitely not perfect. Some items don't actually work, there are a few unfinished features, and there's not a whole lot to do.
+</p>
+But that's okay! It was never supposed to be some massive new game.
+</p>
+I mainly made this because I love Zelda, and I wanted to make something of my own with it.
+</p>
+You can play OOT-IB here! [link here]
+</p>
+If you're interested in how I made it, I've also written a full development log documenting the process, from the first player animations to the final release.
+</p>
+READ THE DEVELOPMENT LOG  [link here]
+</p>
+
+
+ <h1>
+What's Next?
+</h1>
+Now that OOT-IB is out, I don't really have any major plans for it.
+</p>
+Again, this was mostly a test project, and I'm pretty happy with where it ended up.
+</p>
+I'll probably move on to some other things for now, but who knows? Maybe I'll come back and add a few more things eventually.
+</p>
+I've also been spending some time thinking about other projects, so there's definitely more stuff coming!
+</p>
+about coldfront.....
+</p>
+yea I honestly forgot about that...
+</p>
+my bad.
+</p>
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+ <h1>
+Something Weird...
+</h1>
+Okay, so...
+</p>
+I was going through the website recently, just checking a few things and making sure everything was working.
+</p>
+And I noticed something.
+</p>
+I'm not entirely sure what happened, but there's something on the website that definitely wasn't supposed to be there.
+</p>
+I checked a few things, refreshed the page, and... well, it's still there.
+</p>
+It's on the home page... do you see it?
+</p>
+I managed to find the proper inputs after clicking it.
+</p>
+heres the code!
+  </p>
+"Count the flames on a candlestick, the legs on a chair, the sides of a triangle, and the wheels on a bicycle."
+</p>
+In that order.
+</p>
+Surely that's enough of a hint?
+</p>
+..
+</p>
+I'll just leave the rest to you!
+
+ <h1>
+That's About It!
+</h1>
+
+</p>
+That's pretty much everything for November!
+</p>
+OOT-IB is out, I've learned a bunch of new things in Unity, and I've got a few more ideas floating around for future projects.
+</p>
+See ya
+</p>
+
+
+
+
+        </article>
+
+        <a class="back" href="blog.html">&#8592; Back to Blog</a>
+    </main>
+</body>
+</html>
