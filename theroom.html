@@ -32,14 +32,11 @@
             justify-content: center;
             align-items: center;
 
-            /* Prevent selection and mobile gestures */
             user-select: none;
             -webkit-user-select: none;
             -webkit-touch-callout: none;
             touch-action: none;
         }
-
-        /* CENTER IMAGE */
 
         .room-image {
             display: block;
@@ -59,7 +56,7 @@
 
 <body>
 
-    <!-- CENTER IMAGE -->
+    <!-- ROOM IMAGE -->
 
     <img
         class="room-image"
@@ -77,6 +74,7 @@
         autoplay
     ></audio>
 
+
     <script>
 
         // =====================================
@@ -87,45 +85,59 @@
 
         music.volume = 1.0;
 
-        music.play().catch(() => {
+        function startMusic() {
+            music.play().catch(() => {});
+        }
 
-            document.addEventListener("pointerdown", () => {
-                music.play();
-            }, { once: true });
+        startMusic();
 
+        document.addEventListener("pointerdown", startMusic, {
+            once: true
         });
 
 
         // =====================================
-        // RADIO ACCESS
+        // RADIO REDIRECT
         // =====================================
 
         const radioURL =
             "https://json-developerr.github.io/.JSON.com/radio.html";
 
-        const holdDuration = 2000;
+        const HOLD_TIME = 2000;
 
         let holdTimer = null;
         let isHolding = false;
         let isRedirecting = false;
 
 
-        function startHold() {
+        // =====================================
+        // START HOLD
+        // =====================================
 
-            if (isHolding || isRedirecting) return;
+        function startHold(event) {
+
+            if (isRedirecting || isHolding) return;
+
+            if (event.button !== undefined && event.button !== 0) {
+                return;
+            }
 
             isHolding = true;
 
-            holdTimer = setTimeout(() => {
+            holdTimer = window.setTimeout(function() {
 
                 isRedirecting = true;
 
-                window.location.href = radioURL;
+                window.location.assign(radioURL);
 
-            }, holdDuration);
+            }, HOLD_TIME);
 
         }
 
+
+        // =====================================
+        // CANCEL HOLD
+        // =====================================
 
         function cancelHold() {
 
@@ -133,40 +145,43 @@
 
             isHolding = false;
 
-            clearTimeout(holdTimer);
+            if (holdTimer !== null) {
 
-            holdTimer = null;
+                clearTimeout(holdTimer);
+
+                holdTimer = null;
+
+            }
 
         }
 
 
-        // Mouse and touch support
+        // =====================================
+        // INPUT EVENTS
+        // =====================================
 
-        document.addEventListener("pointerdown", (event) => {
-
-            if (event.button !== 0) return;
-
-            startHold();
-
-        });
+        document.addEventListener("pointerdown", startHold);
 
         document.addEventListener("pointerup", cancelHold);
 
-        document.addEventListener("pointerleave", cancelHold);
-
         document.addEventListener("pointercancel", cancelHold);
 
+        document.addEventListener("mouseup", cancelHold);
 
-        // Prevent context menu
+        document.addEventListener("touchend", cancelHold);
 
-        document.addEventListener("contextmenu", (event) => {
+        document.addEventListener("touchcancel", cancelHold);
+
+
+        // =====================================
+        // PREVENT UNWANTED ACTIONS
+        // =====================================
+
+        document.addEventListener("contextmenu", function(event) {
             event.preventDefault();
         });
 
-
-        // Prevent dragging
-
-        document.addEventListener("dragstart", (event) => {
+        document.addEventListener("dragstart", function(event) {
             event.preventDefault();
         });
 
