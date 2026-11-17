@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> </title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 50px 20px;
+        background: #000;
+        color: white;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+    }
+
+    .page {
+        width: 100%;
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .conversation {
+        background: #07172f;
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid #404559;
+        color: white;
+        font-size: 16px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    .heading {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .message {
+        margin: 0 0 15px 0;
+    }
+
+    .speaker {
+        font-weight: bold;
+    }
+
+    .unavailable {
+        margin: 22px 0;
+        color: #a8b8d0;
+        font-style: italic;
+    }
+
+    .line {
+        height: 1px;
+        background: #456080;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .system-message {
+        margin: 15px 0;
+        color: #c0d0e5;
+    }
+
+    .transfer {
+        line-height: 2;
+        letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 20px 12px;
+        }
+
+        .conversation {
+            padding: 20px;
+            font-size: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio autoplay loop>
+    <source src="skiesforeverblue.mp3" type="audio/mpeg">
+</audio>
+
+<div class="page">
+
+    <!-- ARCHIVED CONVERSATION -->
+    <div class="conversation">
+
+        <div class="heading">
+            ARCHIVED CONVERSATION #1 — UNKNOWN DATE
+        </div>
+
+        <p class="message"><span class="speaker">JSON:</span> hey, are you there?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span> yeah lol</p>
+
+        <p class="message"><span class="speaker">JSON:</span> i found something</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span> what?</p>
+
+        <p class="message"><span class="speaker">JSON:</span> nevermind</p>
+
+        <div class="unavailable">[Later messages unavailable]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span> Jason?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span> are you still there?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span> hello?</p>
+
+        <div class="line"></div>
+
+    </div>
+
+    <div class="conversation">
+
+        <div class="heading">
+                        ARCHIVED CONVERSATION #2 — UNKNOWN DATE
+        </div>
+
+        <div class="unavailable">[Conversation begins]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Are you seriously not going to say anything?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Jason, I'm talking to you.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You can't just keep pretending nothing happened.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Do you even understand what you did to Texty?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">He trusted you. Like, genuinely trusted you. And you just threw all of that away because you couldn't be bothered to think about how he felt.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">He was your friend, Jason.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">OUR friend.</p>
+
+        <div class="unavailable">[No response]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">And don't give me that excuse about not meaning it.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You knew exactly what you were saying.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You knew it would hurt him.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I've been listening to him talk about it for DAYS. Do you know how awful he feels?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">He keeps asking me what he did wrong.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">And I don't even know what to tell him.</p>
+
+        <div class="unavailable">[No response]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You know what makes this worse?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You haven't even apologized.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Not once.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You just act like everyone's supposed to move on because YOU'RE done with it.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">That's not how this works.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You don't get to hurt somebody and then decide when they're allowed to stop being hurt.</p>
+
+        <div class="unavailable">[No response]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">...Are you even reading these?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Whatever.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I don't know why I keep trying.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You always do this.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You get upset, you shut everyone out, and then somehow we're all supposed to come crawling back and pretend everything is fine.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I'm tired, Jason.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I'm really tired.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You know, sometimes I wonder if you actually care about any of us.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Or if you just like having people around when they're useful to you.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">...</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">That's not fair.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I shouldn't have said that.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">But seriously, what am I supposed to do?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I'm trying to help you. I'm trying to help Texty. And you won't even TALK to me.</p>
+
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">You know what?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Maybe Texty was right.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Maybe you really don't care about anyone except yourself.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Maybe that's why people keep leaving.</p>
+
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">...</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Jason?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I didn't mean that.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Hey.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Come on, say something.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I'm sorry.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I know you hate when people bring that up.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I shouldn't have used that against you.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Jason?</p>
+
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Okay.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Fine.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">I'm sorry.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Just...</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">Please answer me.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">hello?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">are you there?</p>
+
+        <div class="unavailable">[Message failed to send]</div>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">wait</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">what happened?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">jason?</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">its not sending.</p>
+
+        <p class="message"><span class="speaker">ROWAN:</span></p>
+
+        <p class="message">hello??</p>
+
+        <div class="line"></div>
+
+    </div>
+
+
+    <!-- TRANSFER LOG -->
+    <div class="conversation transfer">
+
+        <div class="heading">
+            TRANSFER LOG — UNKNOWN DATE
+        </div>
+
+        PROCESS STARTED
+
+        <br><br>
+
+        USER: ROWAN
+
+        <br><br>
+
+        TRANSFER: COMPLETE
+
+        <br>
+
+        EXTERNAL CONNECTION LOST
+
+        <br><br>
+
+        No further messages recovered.
+
+    </div>
+
+</div>
+
+</body>
+</html>
