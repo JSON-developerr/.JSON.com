@@ -51,6 +51,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        visibility: hidden;
     }
 
     .option {
@@ -162,7 +163,7 @@
     // Create the 9 rows and 6 columns
     for (let row = 1; row <= 9; row++) {
 
-        // Row number
+        // Invisible row number (keeps spacing)
         const label = document.createElement("div");
         label.className = "row-label";
         label.textContent = row;
